@@ -39,15 +39,6 @@
         ]
     },
     "effectiveDateTime": "2020-09-23T13:00:08.476+00:00",
-    "performer":  [
-        {
-            "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "X26"
-            },
-            "display": "PRESUME WE KNOW THIS ODS Code - MISSING. X26 = NHS Digital"
-        }
-    ],
     "valueCodeableConcept": {
         "coding": [
             {

@@ -4,7 +4,7 @@
     <version value="3.0.0" />
     <name value="COVID-19 Test Results Capability Statement" />
     <status value="active" />
-    <date value="2021-03-16"/>
+    <date value="2021-03-16" />
     <publisher value="digital.nhs.uk" />
     <description value="Conformance requirements for COVID-19 Test Results " />
     <kind value="requirements" />
@@ -25,16 +25,23 @@
             <type value="Observation" />
             <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
             <interaction>
-                <code value="read"/>
+                <code value="search-type" />
             </interaction>
-            <interaction>
-                <code value="search-type"/>
-            </interaction>
-            <searchParam> 
-        <name value="patient.identifier"/> 
-        <type value="token"/> 
-        <documentation value="Search by NHS Number"/> 
-      </searchParam> 
+            <searchParam>
+                <name value="patient" />
+                <type value="reference" />
+                <documentation value="The subject that the observation is about (if patient)" />
+            </searchParam>
+            <searchParam>
+                <name value="code" />
+                <type value="token" />
+                <documentation value="The code of the observation type" />
+            </searchParam>
+            <searchParam>
+                <name value="date" />
+                <type value="reference" />
+                <documentation value="The code of the observation type" />
+            </searchParam>
         </resource>
     </rest>
 </CapabilityStatement>
