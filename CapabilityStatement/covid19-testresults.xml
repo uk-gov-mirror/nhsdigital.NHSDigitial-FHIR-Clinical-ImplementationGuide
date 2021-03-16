@@ -39,8 +39,50 @@
             </searchParam>
             <searchParam>
                 <name value="date" />
-                <type value="reference" />
+                <type value="date" />
                 <documentation value="The code of the observation type" />
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="Patient" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+            <interaction>
+                <code value="search-type" />
+            </interaction>
+            <searchParam>
+                <name value="birthdate" />
+                <type value="date" />
+                <documentation value="The patient's date of birth" />
+            </searchParam>
+            <searchParam>
+                <name value="family" />
+                <type value="string" />
+                <documentation value="A portion of the family name of the patient" />
+            </searchParam>
+            <searchParam>
+                <name value="given" />
+                <type value="string" />
+                <documentation value="A portion of the given name of the patient" />
+            </searchParam>
+            <searchParam>
+                <name value="gender" />
+                <type value="token" />
+                <documentation value="Gender of the patient" />
+            </searchParam>
+            <searchParam>
+                <name value="addresspostalcode" />
+                <type value="string" />
+                <documentation value="A postalCode specified in an address" />
+            </searchParam>
+            <searchParam>
+                <name value="email" />
+                <type value="string" />
+                <documentation value="A value in an email contact" />
+            </searchParam>
+            <searchParam>
+                <name value="phone" />
+                <type value="string" />
+                <documentation value="A value in a phone contact" />
             </searchParam>
         </resource>
     </rest>
