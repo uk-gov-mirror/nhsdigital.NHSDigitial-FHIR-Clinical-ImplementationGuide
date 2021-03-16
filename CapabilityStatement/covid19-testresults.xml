@@ -1,0 +1,35 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="covid19-test-results" />
+    <url value="https://fhir.nhs.uk/CapabilityStatement/covid19-test-results" />
+    <version value="3.0.0" />
+    <name value="COVID-19 Test Results Capability Statement" />
+    <status value="active" />
+    <publisher value="digital.nhs.uk" />
+    <description value="Conformance requirements for COVID-19 Test Results " />
+    <kind value="requirements" />
+    <fhirVersion value="4.0.1" />
+    <format value="application/fhir+json" />
+    <format value="application/fhir+xml" />
+    <rest>
+        <mode value="server" />
+        <security>
+            <service>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/restful-security-service" />
+                    <code value="OAuth" />
+                    <display value="OAuth2 Token" />
+                </coding>
+            </service>
+        </security>
+        <resource>
+            <type value="Observation" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search"/>
+            </interaction>
+        </resource>
+    </rest>
+</CapabilityStatement>
