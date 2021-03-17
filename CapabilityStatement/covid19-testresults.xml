@@ -45,7 +45,7 @@
         </resource>
         <resource>
             <type value="Patient" />
-            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Patient" />
             <interaction>
                 <code value="search-type" />
             </interaction>
