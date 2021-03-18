@@ -14,17 +14,21 @@
             }
         }
     ],
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "a9e514e2-64fc-495e-9a92-28c786807879"
+        }
+    ],
     "status": "completed",
     "occurrenceDateTime": "2020-12-23T13:00:08.476+00:00",
     "patient": {
         "reference": "urn:uuid:edea022a-2d81-11eb-adc1-0242ac120002",
         "type": "Patient",
-        "identifier": [
-            {
-                "system": "https://fhir.nhs.uk/Id/nhs-number",
-                "value": "9987123456"
-            }
-        ]
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9987123456"
+        }
     },
     "vaccineCode": {
         "coding": [
@@ -68,7 +72,15 @@
     "performer": [
         {
             "actor": {
-                "display": "HOLDING, Rafferty (Nurse Practitioner)",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRole",
+                        "valueCodeableConcept": {
+                            "text": "Nurse Practitioner"
+                        }
+                    }
+                ],
+                "display": "HOLDING, Rafferty",
                 "type": "Practitioner",
                 "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/nmc-number",
@@ -78,6 +90,16 @@
         },
         {
             "actor": {
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRole",
+                        "valueCodeableConcept": {
+                            "system": "http://snomed.info/sct",
+                            "code": "413294000",
+                            "display": "Community health services (qualifier value)"
+                        }
+                    }
+                ],
                 "type": "Organization",
                 "identifier": {
                     "value": "RX809",
@@ -105,17 +127,6 @@
         ]
     },
     "expirationDate": "2021-04-29",
-    "location": {
-        "type": {
-            "coding": [
-                {
-                    "system": "http://snomed.info/sct",
-                    "code": "413294000",
-                    "display": "Community health services (qualifier value)"
-                }
-            ]
-        }
-    },
     "protocolApplied": {
         "doseNumberPositiveInt": 1
     }
