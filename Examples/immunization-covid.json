@@ -21,15 +21,6 @@
         }
     ],
     "status": "completed",
-    "occurrenceDateTime": "2020-12-23T13:00:08.476+00:00",
-    "patient": {
-        "reference": "urn:uuid:edea022a-2d81-11eb-adc1-0242ac120002",
-        "type": "Patient",
-        "identifier": {
-            "system": "https://fhir.nhs.uk/Id/nhs-number",
-            "value": "9987123456"
-        }
-    },
     "vaccineCode": {
         "coding": [
             {
@@ -39,12 +30,22 @@
             }
         ]
     },
+    "patient": {
+        "reference": "urn:uuid:edea022a-2d81-11eb-adc1-0242ac120002",
+        "type": "Patient",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9987123456"
+        }
+    },
+    "occurrenceDateTime": "2020-12-23T13:00:08.476+00:00",
+    "recorded": "2020-12-23",
+    "primarySource": true,
     "manufacturer": {
         "display": "DREAMLAND Pharmaceuticals Ltd"
     },
     "lotNumber": "R04X",
-    "recorded": "2020-12-23",
-    "primarySource": true,
+    "expirationDate": "2021-04-29",
     "site": {
         "coding": [
             {
@@ -80,32 +81,15 @@
                         }
                     }
                 ],
-                "display": "HOLDING, Rafferty",
                 "type": "Practitioner",
                 "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/nmc-number",
                     "value": "5566789"
-                }
+                },
+                "display": "HOLDING, Rafferty"
             }
         },
         {
-            "actor": {
-                "extension": [
-                    {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRole",
-                        "valueCodeableConcept": {
-                            "system": "http://snomed.info/sct",
-                            "code": "413294000",
-                            "display": "Community health services (qualifier value)"
-                        }
-                    }
-                ],
-                "type": "Organization",
-                "identifier": {
-                    "value": "RX809",
-                    "system": "https://fhir.nhs.uk/Id/ods-organization-code"
-                }
-            },
             "function": {
                 "coding": [
                     {
@@ -114,20 +98,44 @@
                         "display": "Administering Provider"
                     }
                 ]
+            },
+            "actor": {
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRole",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "413294000",
+                                    "display": "Community health services (qualifier value)"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "type": "Organization",
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "RX809"
+                }
             }
         }
     ],
-    "reasonCode": {
-        "coding": [
-            {
-                "system": "http://snomed.info/sct",
-                "code": "443684005",
-                "display": "Disease outbreak (event)"
-            }
-        ]
-    },
-    "expirationDate": "2021-04-29",
-    "protocolApplied": {
-        "doseNumberPositiveInt": 1
-    }
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "443684005",
+                    "display": "Disease outbreak (event)"
+                }
+            ]
+        }
+    ],
+    "protocolApplied": [
+        {
+            "doseNumberPositiveInt": 1
+        }
+    ]
 }
