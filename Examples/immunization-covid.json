@@ -1,8 +1,8 @@
 {
-    "id": "edea022a-2d81-11eb-adc1-0242ac120001",
+    "resourceType": "Immunization",
     "extension": [
         {
-            "url": "https://simplifier.net/guide/UKCoreDevelopment2/ExtensionUKCore-VaccinationProcedure",
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
             "valueCodeableConcept": {
                 "coding": [
                     {
@@ -39,9 +39,6 @@
         "display": "DREAMLAND Pharmaceuticals Ltd"
     },
     "lotNumber": "R04X",
-    "protocolApplied": {
-        "doseNumberPositiveInt": 1
-    },
     "recorded": "2020-12-23",
     "primarySource": true,
     "site": {
@@ -68,6 +65,36 @@
         "system": "http://snomed.info/sct",
         "code": "3318611000001100"
     },
+    "performer": [
+        {
+            "actor": {
+                "display": "HOLDING, Rafferty (Nurse Practitioner)",
+                "type": "Practitioner",
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/nmc-number",
+                    "value": "5566789"
+                }
+            }
+        },
+        {
+            "actor": {
+                "type": "Organization",
+                "identifier": {
+                    "value": "RX809",
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code"
+                }
+            },
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                        "code": "AP",
+                        "display": "Administering Provider"
+                    }
+                ]
+            }
+        }
+    ],
     "reasonCode": {
         "coding": [
             {
@@ -79,10 +106,6 @@
     },
     "expirationDate": "2021-04-29",
     "location": {
-        "identifier": {
-            "value": "RX809",
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code"
-        },
         "type": {
             "coding": [
                 {
@@ -92,5 +115,8 @@
                 }
             ]
         }
+    },
+    "protocolApplied": {
+        "doseNumberPositiveInt": 1
     }
 }

@@ -1,0 +1,26 @@
+{
+    "resourceType": "Patient",
+    "identifier": [
+        {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9987123456"
+        }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "family": "Dawkins",
+            "given": [
+                "Jack"
+            ]
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1965-02-28",
+    "address": [
+        {
+            "use": "home",
+            "postalCode": "AB12 3CD"
+        }
+    ]
+}
