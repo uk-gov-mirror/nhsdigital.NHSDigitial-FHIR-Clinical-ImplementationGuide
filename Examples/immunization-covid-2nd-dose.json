@@ -25,7 +25,7 @@
   "primarySource": true,
   "occurrenceDateTime": "2021-02-23T13:00:08.476+00:00",
   "patient": {
-    "reference": "urn:uuid:edea022a-2d81-11eb-adc1-0242ac120002",
+    "reference": "Patient/1953684",
     "type": "Patient",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",

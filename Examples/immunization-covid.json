@@ -31,7 +31,7 @@
         ]
     },
     "patient": {
-        "reference": "urn:uuid:edea022a-2d81-11eb-adc1-0242ac120002",
+        "reference": "Patient/1953684",
         "type": "Patient",
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
@@ -75,7 +75,7 @@
             "actor": {
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRole",
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty",
                         "valueCodeableConcept": {
                             "text": "Nurse Practitioner"
                         }
@@ -102,7 +102,7 @@
             "actor": {
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRole",
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty",
                         "valueCodeableConcept": {
                             "coding": [
                                 {
