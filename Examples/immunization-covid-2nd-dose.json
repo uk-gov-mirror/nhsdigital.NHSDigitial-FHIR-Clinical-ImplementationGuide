@@ -29,7 +29,7 @@
     "type": "Patient",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9987123456"
+      "value": "9912003888"
     }
   },
   "vaccineCode": {
