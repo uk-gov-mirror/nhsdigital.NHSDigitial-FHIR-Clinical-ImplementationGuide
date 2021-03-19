@@ -74,14 +74,6 @@
     "performer": [
         {
             "actor": {
-                "extension": [
-                    {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty",
-                        "valueCodeableConcept": {
-                            "text": "Nurse Practitioner"
-                        }
-                    }
-                ],
                 "type": "Practitioner",
                 "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/nmc-number",
@@ -101,20 +93,6 @@
                 ]
             },
             "actor": {
-                "extension": [
-                    {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty",
-                        "valueCodeableConcept": {
-                            "coding": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "413294000",
-                                    "display": "Community health services (qualifier value)"
-                                }
-                            ]
-                        }
-                    }
-                ],
                 "type": "Organization",
                 "identifier": {
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
