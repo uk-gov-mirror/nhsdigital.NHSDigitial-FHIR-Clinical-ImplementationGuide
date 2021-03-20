@@ -46,6 +46,15 @@
   },
   "lotNumber": "R04X",
   "protocolApplied": {
-    "doseNumberPositiveInt": 2
+    "doseNumberPositiveInt": 2,
+    "targetDisease": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "840544004",
+          "display": "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"
+        }
+      ]
+    }
   }
 }
