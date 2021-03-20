@@ -46,7 +46,6 @@
   },
   "lotNumber": "R04X",
   "protocolApplied": {
-    "doseNumberPositiveInt": 2,
     "targetDisease": {
       "coding": [
         {
@@ -55,6 +54,7 @@
           "display": "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"
         }
       ]
-    }
+    },
+    "doseNumberPositiveInt": 2
   }
 }

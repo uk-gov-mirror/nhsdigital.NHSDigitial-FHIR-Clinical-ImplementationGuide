@@ -114,7 +114,6 @@
     ],
     "protocolApplied": [
         {
-            "doseNumberPositiveInt": 1,
             "targetDisease": {
                 "coding": [
                     {
@@ -123,7 +122,8 @@
                         "display": "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"
                     }
                 ]
-            }
+            },
+            "doseNumberPositiveInt": 1
         }
     ]
 }
