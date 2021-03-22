@@ -36,7 +36,7 @@
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "4247xxxxxx"
         },
-        "display" : "Kevin Mayfield"
+        "display": "Kevin Mayfield"
     },
     "occurrenceDateTime": "2021-03-21T17:20:08.476+00:00",
     "recorded": "2021-03-22",
@@ -97,7 +97,7 @@
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                     "value": "C4B2A"
                 },
-                "display" : "ELLAND ROAD STADIUM - COVID VACCINATION CENTRE"
+                "display": "ELLAND ROAD STADIUM - COVID VACCINATION CENTRE"
             }
         }
     ],
@@ -114,15 +114,17 @@
     ],
     "protocolApplied": [
         {
-            "targetDisease": {
-                "coding": [
-                    {
-                        "system": "http://snomed.info/sct",
-                        "code": "840544004",
-                        "display": "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"
-                    }
-                ]
-            },
+            "targetDisease": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "840544004",
+                            "display": "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"
+                        }
+                    ]
+                }
+            ],
             "doseNumberPositiveInt": 1
         }
     ]
