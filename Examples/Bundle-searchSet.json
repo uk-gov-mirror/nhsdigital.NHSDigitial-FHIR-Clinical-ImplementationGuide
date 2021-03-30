@@ -7,6 +7,20 @@
             "fullUrl": "urn:uuid:16de31e1-e761-4b2d-bf02-7ddd3c9d5b05",
             "resource": {
                 "resourceType": "Immunization",
+                "extension":  [
+                    {
+                        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+                        "valueCodeableConcept": {
+                            "coding":  [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "1324681000000101",
+                                    "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine (procedure)"
+                                }
+                            ]
+                        }
+                    }
+                ],
                 "identifier": [
                     {
                         "use": "secondary",
@@ -61,15 +75,9 @@
                         }
                     }
                 ],
-                "reasonCode": [
+                "protocolApplied": [
                     {
-                        "coding": [
-                            {
-                                "system": "http://snomed.info/sct",
-                                "code": "443684005",
-                                "display": "Disease outbreak (event)"
-                            }
-                        ]
+                        "doseNumberPositiveInt": 1
                     }
                 ]
             }

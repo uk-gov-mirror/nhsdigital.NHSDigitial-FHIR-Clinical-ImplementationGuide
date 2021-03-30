@@ -1,5 +1,19 @@
 {
     "resourceType": "Immunization",
+    "extension": [
+        {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "1324681000000101",
+                        "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine (procedure)"
+                    }
+                ]
+            }
+        }
+    ],
     "identifier": [
         {
             "use": "secondary",
@@ -39,7 +53,7 @@
     "occurrenceDateTime": "2020-12-21T09:15:08.326+00:00",
     "recorded": "2020-12-21",
     "primarySource": false,
-    "reportOrigin" : {
+    "reportOrigin": {
         "text": "RR8 - LEEDS TEACHING HOSPITALS NHS TRUST"
     },
     "performer": [
@@ -54,15 +68,9 @@
             }
         }
     ],
-    "reasonCode": [
+    "protocolApplied": [
         {
-            "coding": [
-                {
-                    "system": "http://snomed.info/sct",
-                    "code": "443684005",
-                    "display": "Disease outbreak (event)"
-                }
-            ]
+            "doseNumberPositiveInt": 1
         }
     ]
 }
