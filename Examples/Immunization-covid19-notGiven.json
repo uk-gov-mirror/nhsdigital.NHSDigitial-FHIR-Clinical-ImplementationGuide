@@ -37,8 +37,8 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "39326911000001101",
-                "display": "COVID-19 mRNA (nucleoside modified) Vaccine Moderna 0.1mg/0.5mL dose dispersion for injection multidose vials (Moderna, Inc)"
+                "code": "39330711000001103",
+                "display": "COVID-19 vaccine"
             }
         ]
     },
