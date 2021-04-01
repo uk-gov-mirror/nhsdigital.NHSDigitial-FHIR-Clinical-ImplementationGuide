@@ -7,11 +7,11 @@
             "fullUrl": "urn:uuid:16de31e1-e761-4b2d-bf02-7ddd3c9d5b05",
             "resource": {
                 "resourceType": "Immunization",
-                "extension":  [
+                "extension": [
                     {
                         "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
                         "valueCodeableConcept": {
-                            "coding":  [
+                            "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
                                     "code": "1324681000000101",
@@ -60,7 +60,7 @@
                 "occurrenceDateTime": "2020-12-21T09:15:08.326+00:00",
                 "recorded": "2020-12-21",
                 "primarySource": false,
-                "reportOrigin" : {
+                "reportOrigin": {
                     "text": "RR8 - LEEDS TEACHING HOSPITALS NHS TRUST"
                 },
                 "performer": [
@@ -80,6 +80,9 @@
                         "doseNumberPositiveInt": 1
                     }
                 ]
+            },
+            "search": {
+                "mode": "match"
             }
         },
         {
