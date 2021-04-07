@@ -146,10 +146,10 @@
                     ]
                 },
                 "doseQuantity": {
-                    "value": 1,
-                    "unit": "pre-filled disposable injection",
+                    "value": 0.3,
+                    "unit": "mL",
                     "system": "http://snomed.info/sct",
-                    "code": "3318611000001103"
+                    "code": "258773002"
                 },
                 "performer": [
                     {
@@ -244,10 +244,10 @@
                     ]
                 },
                 "doseQuantity": {
-                    "value": 1,
-                    "unit": "pre-filled disposable injection",
+                    "value": 0.3,
+                    "unit": "mL",
                     "system": "http://snomed.info/sct",
-                    "code": "3318611000001103"
+                    "code": "258773002"
                 },
                 "performer": [
                     {
