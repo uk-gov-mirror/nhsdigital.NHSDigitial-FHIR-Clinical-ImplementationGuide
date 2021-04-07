@@ -29,17 +29,15 @@
                     }
                 ],
                 "status": "not-done",
-                "statusReason": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://snomed.info/sct",
-                                "code": "1324721000000108",
-                                "display": "SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination dose declined"
-                            }
-                        ]
-                    }
-                ],
+                "statusReason": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1324721000000108",
+                            "display": "SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination dose declined"
+                        }
+                    ]
+                },
                 "vaccineCode": {
                     "coding": [
                         {
@@ -196,7 +194,7 @@
                                     "system": "http://snomed.info/sct",
                                     "code": "1324691000000104",
                                     "display": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine (procedure)"
-                                  }
+                                }
                             ]
                         }
                     }
