@@ -29,17 +29,15 @@
                     }
                 ],
                 "status": "not-done",
-                "statusReason": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://snomed.info/sct",
-                                "code": "1324721000000108",
-                                "display": "SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination dose declined"
-                            }
-                        ]
-                    }
-                ],
+                "statusReason": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1324721000000108",
+                            "display": "SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccination dose declined"
+                        }
+                    ]
+                },
                 "vaccineCode": {
                     "coding": [
                         {
@@ -194,8 +192,8 @@
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "1324681000000101",
-                                    "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine (procedure)"
+                                    "code": "1324691000000104",
+                                    "display": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine (procedure)"
                                 }
                             ]
                         }
@@ -226,14 +224,14 @@
                         "value": "9912003888"
                     }
                 },
-                "occurrenceDateTime": "2020-12-23T13:00:08.476+00:00",
-                "recorded": "2020-12-23",
+                "occurrenceDateTime": "2021-02-23T13:00:08.476+00:00",
+                "recorded": "2021-02-23",
                 "primarySource": true,
                 "manufacturer": {
                     "display": "AstraZeneca Ltd"
                 },
-                "lotNumber": "R04X",
-                "expirationDate": "2021-04-29",
+                "lotNumber": "A04Z",
+                "expirationDate": "2021-06-29",
                 "route": {
                     "coding": [
                         {
@@ -273,7 +271,7 @@
                 ],
                 "protocolApplied": [
                     {
-                        "doseNumberPositiveInt": 1
+                        "doseNumberPositiveInt": 2
                     }
                 ]
             },
