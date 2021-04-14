@@ -21,7 +21,11 @@
                 </coding>
             </service>
         </security>
-         <resource>
+        <resource>
+            <type value="CommunicationRequest" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-CommunicationRequest" />
+        </resource>
+        <resource>
             <type value="Observation" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation" />
             <interaction>
