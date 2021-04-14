@@ -1,0 +1,56 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="apim-clinical-conformance" />
+    <url value="https://fhir.nhs.uk/CapabilityStatement/apim-clinical-conformance" />
+    <version value="3.0.0" />
+    <name value="APIM Clinical Conformance Capability Statement" />
+    <status value="active" />
+    <date value="2021-03-16" />
+    <publisher value="digital.nhs.uk" />
+    <description value="Conformance requirements NHS Digital Clinical APIs" />
+    <kind value="requirements" />
+    <fhirVersion value="4.0.1" />
+    <format value="json" />
+    <rest>
+        <mode value="server" />
+        <security>
+            <service>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/restful-security-service" />
+                    <code value="OAuth" />
+                    <display value="OAuth2 Token" />
+                </coding>
+            </service>
+        </security>
+        <resource>
+            <type value="CommunicationRequest" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-CommunicationRequest" />
+        </resource>
+        <resource>
+            <type value="Observation" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation" />
+            <interaction>
+                <code value="search-type" />
+            </interaction>
+            <searchParam>
+                <name value="patient.identifier" />
+                <type value="token" />
+                <documentation value="The patient identifier (e.g. NHS Number) that the observation is about" />
+            </searchParam>
+            <searchParam>
+                <name value="patient" />
+                <type value="reference" />
+                <documentation value="The patient that the observation is about" />
+            </searchParam>
+            <searchParam>
+                <name value="code" />
+                <type value="token" />
+                <documentation value="The code of the observation type" />
+            </searchParam>
+            <searchParam>
+                <name value="date" />
+                <type value="date" />
+                <documentation value="The code of the observation type" />
+            </searchParam>
+        </resource>
+    </rest>
+</CapabilityStatement>
