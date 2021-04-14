@@ -1,6 +1,6 @@
 {
   "resourceType": "ObservationDefinition",
-  "id": "ObservationDefinition-COVID19DetectionResult",
+  "id": "snomed-871562009",
   "code": {
     "coding": [
       {
