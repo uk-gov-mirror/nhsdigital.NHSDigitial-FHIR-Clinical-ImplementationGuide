@@ -21,16 +21,21 @@
                 </coding>
             </service>
         </security>
-        <resource>
+         <resource>
             <type value="Observation" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Observation" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Observation" />
             <interaction>
                 <code value="search-type" />
             </interaction>
             <searchParam>
+                <name value="patient.identifier" />
+                <type value="token" />
+                <documentation value="The patient identifier (e.g. NHS Number) that the observation is about" />
+            </searchParam>
+            <searchParam>
                 <name value="patient" />
                 <type value="reference" />
-                <documentation value="The subject that the observation is about (if patient)" />
+                <documentation value="The patient that the observation is about" />
             </searchParam>
             <searchParam>
                 <name value="code" />
@@ -41,48 +46,6 @@
                 <name value="date" />
                 <type value="date" />
                 <documentation value="The code of the observation type" />
-            </searchParam>
-        </resource>
-        <resource>
-            <type value="Patient" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Patient" />
-            <interaction>
-                <code value="search-type" />
-            </interaction>
-            <searchParam>
-                <name value="birthdate" />
-                <type value="date" />
-                <documentation value="The patient's date of birth" />
-            </searchParam>
-            <searchParam>
-                <name value="family" />
-                <type value="string" />
-                <documentation value="A portion of the family name of the patient" />
-            </searchParam>
-            <searchParam>
-                <name value="given" />
-                <type value="string" />
-                <documentation value="A portion of the given name of the patient" />
-            </searchParam>
-            <searchParam>
-                <name value="gender" />
-                <type value="token" />
-                <documentation value="Gender of the patient" />
-            </searchParam>
-            <searchParam>
-                <name value="addresspostalcode" />
-                <type value="string" />
-                <documentation value="A postalCode specified in an address" />
-            </searchParam>
-            <searchParam>
-                <name value="email" />
-                <type value="string" />
-                <documentation value="A value in an email contact" />
-            </searchParam>
-            <searchParam>
-                <name value="phone" />
-                <type value="string" />
-                <documentation value="A value in a phone contact" />
             </searchParam>
         </resource>
     </rest>
