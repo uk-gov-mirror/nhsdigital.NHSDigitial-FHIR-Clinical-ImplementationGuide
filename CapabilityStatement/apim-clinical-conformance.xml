@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-    <id value="covid19-test-results" />
-    <url value="https://fhir.nhs.uk/CapabilityStatement/covid19-test-results" />
+    <id value="apim-clinical-conformance" />
+    <url value="https://fhir.nhs.uk/CapabilityStatement/apim-clinical-conformance" />
     <version value="3.0.0" />
-    <name value="COVID-19 Test Results Capability Statement" />
+    <name value="APIM Clinical Conformance Capability Statement" />
     <status value="active" />
     <date value="2021-03-16" />
     <publisher value="digital.nhs.uk" />
-    <description value="Conformance requirements for COVID-19 Test Results " />
+    <description value="Conformance requirements NHS Digital Clinical APIs" />
     <kind value="requirements" />
     <fhirVersion value="4.0.1" />
     <format value="json" />
