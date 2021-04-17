@@ -10,6 +10,7 @@ body {
     background-color: #f5f5f5; }
     body header .title {
       font-size: 30px;
+      font-family: Frutiger W01,Arial,sans-serif;
       padding-top: 23px;
       color: black; }
       body header .title a {
@@ -43,7 +44,10 @@ body {
     padding-right: 50px;
     text-align: left; 
   }
-
+  
+  .lang-json {
+    border: 1px solid #ccc;
+  }
   .tab {
     overflow: hidden;
     border: 1px solid #ccc;
