@@ -28,5 +28,13 @@
                 "value": "9903002157"
             }
         }
-    ]
+    ],
+    "requester": {
+        "type": "Organization",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+        },
+        "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+    }
 }
