@@ -30,11 +30,10 @@
         }
     ],
     "requester": {
-        "type": "Organization",
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
+            "value": "RTD"
         },
-        "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+        "display": "THE NEWCASTLE UPON TYNE HOSPITALS NHS FOUNDATION TRUST"
     }
 }
