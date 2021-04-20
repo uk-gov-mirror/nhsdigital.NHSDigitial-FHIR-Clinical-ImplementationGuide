@@ -40,6 +40,26 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.extension">
+      <path value="Observation.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.extension:covid19Testing">
+      <path value="Observation.extension" />
+      <sliceName value="covid19Testing" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-COVID19-TestResult" />
+      </type>
+    </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier" />
       <min value="1" />
