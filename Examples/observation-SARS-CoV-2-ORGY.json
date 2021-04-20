@@ -1,6 +1,25 @@
 {
     "resourceType": "Observation",
-    "id": "SARS-CoV-2-ORGY",
+    "id": "08fa43dc-6bda-456f-b10c-5bc8abaca855",
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-COVID19-TestResult",
+            "extension": [
+                {
+                    "url": "reportOrigin",
+                    "valueCodeableConcept": {
+                        "text": "electiveCare"
+                    }
+                },
+                {
+                    "url": "administrationMethod",
+                    "valueCodeableConcept": {
+                        "text": "health_care_professionalß"
+                    }
+                }
+            ]
+        }
+    ],
     "identifier": [
         {
             "system": "https://fhir.nhs.uk/Id/SpecimenId",
@@ -63,22 +82,34 @@
         {
             "type":"Organization",
             "identifier": {
+                "type" : {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                            "code": "173",
+                            "display": "PATHOLOGY LAB"
+                        }
+                    ]
+                },
                 "value": "LFD004"
             },
-            "display" : "LFD 0004 Processing Lab"
+            "display" : "Add if possible"
         },
         {
             "type":"Organization",
             "identifier": {
-                
+                "type" : {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/Id/OrgType",
+                            "code": "TestCentreId",
+                            "display" : "Testing Centre"
+                        }
+                    ]
+                },
                 "value": "WKE03"
             },
-            "display" :"WKE 03 Testing Centre"
-
-        },
-        {
-            "type":"Patient",
-            "display" : "self"
+            "display" : "Add if possible"
         }
     ]
 }
