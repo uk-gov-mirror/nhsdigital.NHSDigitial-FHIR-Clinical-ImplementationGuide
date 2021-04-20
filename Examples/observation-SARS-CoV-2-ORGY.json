@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "SARS-CoV-2-ORGY",
+    "id": "08fa43dc-6bda-456f-b10c-5bc8abaca855",
     "extension": [
         {
             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-COVID19-TestResult",
