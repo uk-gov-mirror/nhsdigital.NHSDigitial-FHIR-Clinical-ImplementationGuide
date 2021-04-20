@@ -72,6 +72,10 @@
       <path value="Observation.identifier.value" />
       <min value="1" />
     </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;. SNOMED preferred." />
+    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
